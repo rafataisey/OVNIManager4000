@@ -236,6 +236,7 @@
             this.Controls.Add(this.btnLigar);
             this.Controls.Add(this.grbDados);
             this.Name = "Painel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Painel";
             this.Load += new System.EventHandler(this.Painel_Load);
             this.grbDados.ResumeLayout(false);
