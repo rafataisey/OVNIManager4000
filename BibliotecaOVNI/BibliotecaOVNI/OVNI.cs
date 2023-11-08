@@ -143,7 +143,7 @@ namespace BibliotecaOVNI
         public bool MudarPlaneta(string novoPlaneta)
         {
             // Verificar se o OVNI pode mudar para um planeta válido:
-            if (_planetasValidos.Contains(novoPlaneta))
+            if (_planetasValidos.Contains(novoPlaneta) && novoPlaneta != _planetaAtual)
             {
                 _planetaAtual = novoPlaneta;
                 return true;
